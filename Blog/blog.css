@@ -35,23 +35,24 @@ header, footer{
     padding: 15px;
     width: inherit;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0;
     background-color:  #043458;
     color: #FEEDD8;
 }
 
-h1{
+header h1{
+
+    text-align: center;
     font-size: 2rem;
     font-style: italic;
     padding: 5px;
 }
 
-nav{
+header nav{
     height: 5vh;
-    width: 100vw;
     display: inline-block;
-    background-color:  #4e5851;
+    background-color:  #043458;
     padding: 15px 0px;
 }
 nav ul{
@@ -70,12 +71,17 @@ nav ul li a{
     padding: 5px;
 }
 
-main{
-    height: 75vh;
+.container{
+    height: 100%;
     width: inherit;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     margin: 0;
     padding: 0;
+    background-color: #25282a;
+    
+
 }
 
 strong
@@ -93,15 +99,25 @@ strong
     background-color: lime;
     border-radius: 50%;
 }
-section{
-    width: 100vw;
+.one{
+    width: 50%;
     margin: 0; 
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #25282a;
+    background-color: #f3d060;
+}
+.two{
+    width: 50%;
+    margin: 0; 
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #5eb0e5;
 }
  section h2{
     align-self: flex-start;
@@ -115,13 +131,14 @@ section{
         font-size: 1.5rem;
     }
 section article{
-    width: 99vw;
+    width: 100%;
+    min-height: 20%;
     margin: 1px;
     padding: 10px;
     font-size: 1.5rem;
-    background-color: #535150;
+    background-color: lime;
     border: 1px solid #FEEDD8;
-    border-radius: 10px;
+    border-radius: 15px 50px 30px;
 }
 footer div{
     display: flex;
